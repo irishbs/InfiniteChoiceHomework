@@ -60,7 +60,8 @@ Removing all cookies manually before each test solves this issue.
 Final Thoughts:
 
 The homework was simple though I had a few challenges mentioned above.  I think if I had more time I would be able to run the
-test completely from start to finish.  Unfortunately, with the jumping of baseURL's (google to guestreservations).I  know that within the test environmentsit is easier to debug and control the automation process.
+test completely from start to finish.  Unfortunately, with the jumping of baseURL's (google to guestreservations).
+I know that within the test environments it is easier to debug and control the automation process.
 
 Cheers!
 Brandon
