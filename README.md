@@ -16,17 +16,20 @@ The instructions were:
 * Fill out the Reservation/Billing Form with your user info and test credit card number.
 * Submit the form and validate the error with an issue with the card.
 
-Video the Process
+Video the Process 
+(ManualRunNoDatePopup.mp4)
 
 ########################################################
 
 GoogleToDecline.cy.js is the full test file of the 3 tests below.
+(FinalTestRunStartingFromGSLink.mp4)
 
 Files 1-3 are the breakdown of my work and how I separated it into chucks based on 
 the challenges I ran into.
 
 1-GoogleToGuestReservations - This file starts on Google and attempts to find the guestreservations link.
 The recurring issue is that guestreservations.com's URL was not showing up on the 1st page for Google (even while scrolling down)
+(Guestresrvations-notOnGoogle.mp4)
 
 2-GuestReservationsDataUpdate - This file starts with the guestreservations link that Google provides, fills out, the
 required dates for the test, and clicks on "find rooms".  Cypress was timing out and failing the test while loading the 
@@ -43,6 +46,14 @@ Cypress stalls out on the page and validation fails due to 'too many redirects'
 
 (This does not occur when manually using Chrome or in incognito mode).
 
-
 ###########################################################
 
+Final Thoughts:
+
+The homework was simple though I had a few challenges mentioned above.  I think if I had more time I would be able to run the
+test completely from start to finish.  Unfortunately, with the jumping of baseURL's (google to guestreservations) and 
+the uncontrolled redirect looping at the end, I wasn't able to give you a complete video. I know that within the test environments
+it is easier to debug and control the automation process.
+
+Cheers!
+Brandon
