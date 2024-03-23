@@ -11,7 +11,7 @@
  describe('Google to GuestReservations site', () => {
 
     it('Search for Aria Las Vegas', () => {
-        cy.clearAllCookies(); //Doesn't really work for google search from my IP
+        //cy.clearAllCookies(); //Doesn't really work for Google search
 
         //1-GoogleToGuestReservations portion... commenting out to run full video.
         // cy.visit('https://www.google.com');
@@ -77,9 +77,11 @@
         cy.get('button[type="submit"]').click();
         cy.url().should('contains', 'https://www.guestreservations.com/aria-resort-casino/hotelcheckout'); //URL Validation
 
-        //Error investigate why infinite redirects are occurring with URL
+        //Error investigate why infinite redirects are occurring with URL 
         //https://sync.crwdcntrl.net/qmap?c=1389&tp=STSC&tpid=a5e1685c-949a-4b5f-b663-b3c87d5c2949-65fe8d00-5553&gdpr=0&gdpr_consent=&d=https%3A%2F%2Fpixel.tapad.com%2Fidsync%2Fex%2Fpush%3Fpartner_id%3D2499%26partner_device_id%3Da5e1685c-949a-4b5f-b663-b3c87d5c2949-65fe8d00-5553%26partner_url%3Dhttps%253A%252F%252Fads.stickyadstv.com%252Fuser-registering%253FdataProviderId%253D721%2526userId%253Da5e1685c-949a-4b5f-b663-b3c87d5c2949-65fe8d00-5553%2526gdpr%253D0%2526gdpr_consent%253D
-        cy.get('.div[id="w0"]').should("have.text","Credit card number or card holder data is incorrect.");  //Error Validation (Also, shouldn't card holder be "cardholder"?
+        //Update Fix Validation now works with clearing cache and cookies. 
+     
+        cy.get('#w0 > h4'"]').should("have.text","Credit card number or card holder data is incorrect.");  //Error Validation (Also, shouldn't card holder be "cardholder"?
     });
     
 });
