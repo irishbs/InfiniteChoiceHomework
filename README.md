@@ -30,7 +30,9 @@ Files 1-3 are the breakdown of my work and how I separated it into chucks based 
 the challenges I ran into.
 
 1-GoogleToGuestReservations - This file starts on Google and attempts to find the guestreservations link.
-The recurring issue is that guestreservations.com's URL was not showing up on the 1st page for Google (even while scrolling down)
+The recurring issue is that guestreservations.com's URL was not showing up on the 1st page for Google (even while scrolling down).
+I have tried running the test using my VPN from several countries all with the same result.
+
 (Guestresrvations-notOnGoogle.mp4)
 
 2-GuestReservationsDataUpdate - This file starts with the guestreservations link that Google provides, fills out, the
